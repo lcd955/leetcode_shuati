@@ -10,7 +10,18 @@ class Solution(object):
                 res += dct[s[i]]
             i += 1
         return res+dct[s[-1]
+
 #14 最长公共前缀
-class Solution
+class Solution():
+    def longestCommonPrefix(self,strs):
+        if not strs:
+            return ""
+        res = ""
+        for each in zip(*strs):
+            if len(set(each)) == 1:
+                res += each[0]
+            else:
+                break
+        return res
 
 
