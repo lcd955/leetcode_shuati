@@ -9,6 +9,8 @@ class Solution(object):
             else:
                 res += dct[s[i]]
             i += 1
-        return res+dct[s[-1]]
+        return res+dct[s[-1]
+#14 最长公共前缀
+class Solution
 
 
