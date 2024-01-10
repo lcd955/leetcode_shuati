@@ -23,6 +23,14 @@ class Solution():
             else:
                 break
         return res
-#1
+#2696 删除子串后的最小字符串长度
+class Solution:
+    def minLength(self, s: str) -> int:
+        a='AB'
+        b='CD'
+        while (a in s or b in s):
+                s=s.replace(a,'')
+                s=s.replace(b,'')
+        return len(s)
 
 
